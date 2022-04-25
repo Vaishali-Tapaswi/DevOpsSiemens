@@ -1,0 +1,20 @@
+Point 1 - 
+  Applications
+    1. Rich Client -> 
+    2. Thin Client -> Web Applications
+      Browser+Network
+        Round Trip (Sync)
+    3. Rich Internet Applications (RIA)
+  --------------------------------------------
+  Applications
+    Thin Clients / RIA
+    Client -----------> Web Server ------------Business Logic------------Persistent/Integration --->Databse
+    Browser 			Servlet/JSP				EJB / JavaBeans				JDBC / Hibernate/JPA
+
+              Presentation			BL Layer					Integration Layer
+              Layer
+  -----------------------------------------
+  Service 
+      Small Service (Micro Services)
+
+    Monolith ------->Micro Services
