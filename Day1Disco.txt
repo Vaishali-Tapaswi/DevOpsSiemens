@@ -1,3 +1,30 @@
+Lab 1 - Maven
+	Eclipse -> new Workspace -> window -> preferences -> compiler/ installedJRE(jdk)
+	new Maven Project -> G(Day1) A(Day1.demo1) V(0.0.01..)
+	Create a new class (demo.Calc)
+		package demo;
+
+		public class Calc {
+
+			public int add(int i, int j ) {
+				return i+j;
+			}
+			public int divide(String str1, String str2) {
+				int  i = Integer.parseInt(str1);
+				int  j = Integer.parseInt(str2);
+				return i/j;
+			}
+			public static void main(String[] args) {
+				Calc c = new Calc();
+				System.out.println(c.add(20,400));
+				System.out.println(c.divide("100","10"));
+				System.out.println(c.divide("100","0"));
+			}
+		}
+
+	Run ->maven build -> clean  install package
+
+-----------------------
 Point 1 - 
   Applications
     1. Rich Client -> 
