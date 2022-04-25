@@ -1,3 +1,32 @@
+Build Tools 
+	https://mindmajix.com/12-open-source-devops-build-tools
+	https://www.softwaretestinghelp.com/tools/top-40-static-code-analysis-tools/
+-------------
+Lab 2 - Configure SonarQube in Maven
+	Modify pom file to include dependencies
+		<dependency>
+			<groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.2</version>
+		</dependency>
+	add profiles after dependencies
+		<profiles>
+			<profile>
+				<id>sonar</id>
+				<activation>
+					<activeByDefault>true</activeByDefault>
+				</activation>
+				<properties>
+					<!-- Optional URL to server. Default value is http://localhost:9000 -->
+					<sonar.host.url>
+						http://localhost:9000
+					</sonar.host.url>
+				</properties>
+			</profile>
+		</profiles>
+	
+	run maven as sonar:sonar (assuming sonar server is running on localhost:9000)
+		
 Lab 1 - Maven
 	Eclipse -> new Workspace -> window -> preferences -> compiler/ installedJRE(jdk)
 	new Maven Project -> G(Day1) A(Day1.demo1) V(0.0.01..)
