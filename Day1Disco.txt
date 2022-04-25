@@ -1,3 +1,7 @@
+Day 2- Create github account (personal email)
+	download and install github
+	tomcat installation(not required)
+	
 Build Tools 
 	https://mindmajix.com/12-open-source-devops-build-tools
 	https://www.softwaretestinghelp.com/tools/top-40-static-code-analysis-tools/
