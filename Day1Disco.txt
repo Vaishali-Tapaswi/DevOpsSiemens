@@ -33,6 +33,8 @@ Single Hosting
 						
 Devlopment->Deployment->Administration
 
+Point 3 - DevOps 
+	https://www.atlassian.com/devops/devops-tools
 Read/Refer
   https://martinfowler.com/articles/microservices.html
   https://redwerk.com/wp-content/uploads/2020/04/pic2.png
