@@ -18,3 +18,22 @@ Point 1 -
       Small Service (Micro Services)
 
     Monolith ------->Micro Services
+----------------------------------------
+Point2 -
+Monolith --------------> Micro Services
+						Scalability + (Uber)
+Single Hosting
+						5/10 Micro Services
+						Monitor -> all 5 services are started, running, network
+						Devlopment -> Interface, single change-> compiled, tested, deployed
+						
+						Requirement -> Automation (Tools)
+						
+						DevOps -> 
+						
+Devlopment->Deployment->Administration
+
+Read/Refer
+  https://martinfowler.com/articles/microservices.html
+  https://redwerk.com/wp-content/uploads/2020/04/pic2.png
+  
