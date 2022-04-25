@@ -45,3 +45,7 @@ Read/Refer
 Point 4 - Virtualization
 	https://documentation.suse.com/smart/linux/html/concept-virtualization/images/virtualization-schema.png
 	https://www.oracle.com/assets/oracle-vm-virtualbox-overview-2981353.pdf
+	Related Concepts
+		Containerization (Docker)
+		Infrastructure as Code 
+		ex - > Vagrant / Terraform
