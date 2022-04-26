@@ -25,7 +25,7 @@ Lab 2 - SSL Settings
               Browser -> https://localhost:443 (check certificate) 
       -------------
       Tomcat -> Create SSL certificate - 
-                     keytool -genkeypair -v -alias myalias -keyalg RSA -keysize 512 -validity 365 -keystore test.jks  -keypass websphere -storepass websphere   
+                     keytool -genkeypair -v -alias myalias -keyalg RSA -keysize 1024 -validity 365 -keystore test.jks  -keypass websphere -storepass websphere   
                 modify conf/server.xml
                  <Connector
 		protocol="org.apache.coyote.http11.Http11NioProtocol"
