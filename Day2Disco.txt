@@ -1,3 +1,9 @@
+GitHub - Lab3 - conflicts
+		pull the same repo in dev1 and dev2
+		modify, commit, push
+			->first successful, second error 
+		modify main branch file and then create pull request to see conflict	
+
 GitHub - Lab2 
 	Create tocken 
 		account->settings->developer setting ->personal access token 
