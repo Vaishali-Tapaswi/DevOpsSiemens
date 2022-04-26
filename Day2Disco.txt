@@ -6,19 +6,21 @@ Lab 2 - SSL Settings
                select web site -> demo1 -> bindings ->add -> https binding (443)
               Browser -> https://localhost:443 (check certificate) 
       -------------
-      Tomcat -> test.pem
-       Modify conf/server.xml to modify/uncomment
-                 <Connector port="8443" protocol="org.apache.coyote.http11.Http11AprProtocol"
-                             maxThreads="150" SSLEnabled="true" >
-                      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />
-                      <SSLHostConfig>
-                          <Certificate certificateKeyFile="conf/temp.pem"
-                                       certificateFile="conf/temp.pem"
-                                       certificateChainFile="conf/temp.pem"
-                                       type="RSA" />
-                      </SSLHostConfig>
-                  </Connector>
-       copy temp.pem file to conf folder of tomcat
+      Tomcat -> Create SSL certificate - 
+                     keytool -genkeypair -v -alias myalias -keyalg RSA -keysize 512 -validity 365 -keystore test.jks  -keypass websphere -storepass websphere   
+                modify conf/server.xml
+                 <Connector
+		protocol="org.apache.coyote.http11.Http11NioProtocol"
+		port="8443"
+		maxThreads="200"
+		scheme="https"
+		secure="true"
+		SSLEnabled="true"
+		keystoreFile="/conf/test.jks"
+		keystorePass="websphere"
+		clientAuth="false"
+		sslProtocol="TLS"/>
+     
       Test -> https://localhost:8443
               
       
