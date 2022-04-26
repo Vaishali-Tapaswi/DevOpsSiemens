@@ -1,4 +1,15 @@
-GitHub - 1. login to your github account, create new repo
+GitHub - Lab2 
+	Create tocken 
+		account->settings->developer setting ->personal access token 
+			name, permissions -> repo ->copy
+	2. local repo -> change -> commit ->status
+	cmd>git remote add addr1 https://{{token}}@github.com/Vaishali-Tapaswi/simple
+	cmd>git push addr1
+	Browser -> New branch with merge options ->
+		able to merbe (No conflicts)
+
+GitHub -Lab1
+	1. login to your github account, create new repo
 		initialize with readme file
 	 2. cmd (install git - https://git-scm.com/downloads)
 	 create a new folder (developer1)
