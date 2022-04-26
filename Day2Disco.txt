@@ -1,2 +1,25 @@
 Lab1 - Run tomcat, deploy war file
        Run iis, deploy application
+Lab 2 - SSL Settings
+       IIS -> select Host ->Server certificates
+                     Create Self Signed Certificate (store)
+               select web site -> demo1 -> bindings ->add -> https binding (443)
+              Browser -> https://localhost:443 (check certificate) 
+      -------------
+      Tomcat -> test.pem
+       Modify conf/server.xml to modify/uncomment
+                 <Connector port="8443" protocol="org.apache.coyote.http11.Http11AprProtocol"
+                             maxThreads="150" SSLEnabled="true" >
+                      <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />
+                      <SSLHostConfig>
+                          <Certificate certificateKeyFile="conf/temp.pem"
+                                       certificateFile="conf/temp.pem"
+                                       certificateChainFile="conf/temp.pem"
+                                       type="RSA" />
+                      </SSLHostConfig>
+                  </Connector>
+       copy temp.pem file to conf folder of tomcat
+      Test -> https://localhost:8443
+              
+      
+              
