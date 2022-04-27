@@ -8,3 +8,13 @@ Lab 1 - GitLab Web
 Lab 2 - in same project
   Create .java file -> helloworld
   Modify pipleline to compile code and run the same
+       HelloWorld.java
+         public class HelloWorld{
+          public static void main(String[] args){
+              System.out.println("Hello World 1.0!!!");
+          }
+         }
+    compile 
+      javac HelloWorld.java
+    run
+      java HelloWorld
