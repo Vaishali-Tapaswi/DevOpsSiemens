@@ -60,3 +60,9 @@ Lab 2 - in same project
     create passsword variable and print 
 
 Lab 5- GitLab runner configuration
+
+Lab 6 - new Project -> import -> github (https://github.com/Vaishali-Tapaswi/mymavenproj)
+  image - maven:3.8.5-eclipse-temurin-8
+  build -> mvn package
+    artifacts to download war file.
+  Create an issue -> assign to your self -> check you todo list 
