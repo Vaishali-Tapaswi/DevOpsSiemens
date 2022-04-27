@@ -1,0 +1,10 @@
+Lab 1 - GitLab Web
+  Group -> Create group
+  Project -> new project in group
+    Repo -> initialize with readme
+    Create Pipeline -> editor 
+      Observe -> stages / Jobs -> Run -> Monitor (Jobs -> Console -> Docker Container)
+
+Lab 2 - in same project
+  Create .java file -> helloworld
+  Modify pipleline to compile code and run the same
