@@ -18,3 +18,9 @@ Lab 2 - in same project
       javac HelloWorld.java
     run
       java HelloWorld
+   Observe Error for java 
+   ------------> modify pipeline/job to include image
+       build-job:       # This job runs in the build stage, which runs first.
+         image: java:8
+
+     
