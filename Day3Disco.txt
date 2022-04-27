@@ -23,4 +23,25 @@ Lab 2 - in same project
        build-job:       # This job runs in the build stage, which runs first.
          image: java:8
 
-     
+ Lab 3 - Compile in one java and run in other 
+      observe error for wrong image and HelloWorld.class not found
+      Image error -> defining image for test-job
+      Class Not found error -> adding artifacts
+      Create issue -> assign to yourself, check todo list 
+ 
+--------------------------
+ build-job:       # This job runs in the build stage, which runs first.
+  image: java:8
+  stage: build
+  script:
+    - echo "Compiling the code..."
+    - cat HelloWorld.java
+    - javac HelloWorld.java
+    - java HelloWorld
+    - echo "Compile complete."
+  artifacts:
+    untracked: false
+    expire_in: 30 days
+    paths: 
+      - HelloWorld.class
+--------------------------
